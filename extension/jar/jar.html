@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Jar 🫙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jar.css">
+</head>
+<body>
+  <header>
+    <h1>🫙 My Jar</h1>
+    <div class="stats">
+      <div class="stat"><span class="num" id="stat-bottles">0</span><span class="label">bottles</span></div>
+      <div class="stat"><span class="num" id="stat-saved">$0</span><span class="label">saved</span></div>
+      <div class="stat"><span class="num" id="stat-bought">$0</span><span class="label">spent intentionally</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="empty-state" class="empty-state">
+      <p class="title">Your jar is empty.</p>
+      <p class="hint">Right-click any product page → <em>Bottle it 🫙</em> to start your collection.</p>
+    </div>
+    <div id="jar-bounds" class="jar-bounds"></div>
+    <div id="hint-bar" class="hint-bar"></div>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="jar.js"></script>
+</body>
+</html>
